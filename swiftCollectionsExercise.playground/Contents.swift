@@ -14,6 +14,8 @@ print(nums.count)
 
 //1e
 print(nums[2])
+//or
+print(nums.last)
 
 //1g
 print(nums.sorted())
@@ -25,7 +27,7 @@ print(nums.reversed())
 print(nums.shuffled())
 
 //2a
-var marioBros = [""]
+var marioBros: [String] = []
 
 //2b
 marioBros.append("Mario")
@@ -34,23 +36,23 @@ marioBros.append("Mario")
 marioBros.append("Luigi")
 
 //2e
-print(marioBros[2])
+print(marioBros[1])
 
 //2
-marioBros.insert("Toad", at: 2)
+marioBros.insert("Toad", at: 1)
 //2
 marioBros.insert("Princess Peach", at: 0);
 print(marioBros)
 
 //3a
-var marioVillains = [""]
+var marioVillains: Set<String> = []
 
 //3b
-marioVillains.insert("Bowser", at: 0);
+marioVillains.insert("Bowser");
 print(marioVillains)
 
 //3c
-marioVillains.insert("Koopa Troopa", at: 1);
+marioVillains.insert("Koopa Troopa");
 
 //3d
 print(marioVillains)
@@ -59,13 +61,13 @@ print(marioVillains)
 print(marioVillains.contains("Yosho"));
 
 //4a
-var marioBrosGames = [""];
+var marioBrosGames: [String] = []
 
 //4b
 marioBrosGames.append("Super Mario World");
 
 //4d
-var  marioBrosGamesSet: Set<String> = [""]
+var  marioBrosGamesSet = Set(marioBrosGames)
 print(marioBrosGamesSet)
 
 //5a
@@ -75,7 +77,7 @@ let characters: [String : String] = [
 ]
 
 //5b
-print(characters)
+print(characters["Mario"])
 
 
 //Bonus
@@ -88,10 +90,13 @@ var otherCharactersOne = [
 //
 
 //1a
-print(otherCharactersOne[0])
+print(otherCharactersOne[0].first)
+//or
+print(otherCharactersOne[0][0])
 
 //1b
-print(otherCharactersOne[1])
+print(otherCharactersOne[1].last)
+
 
 
 
